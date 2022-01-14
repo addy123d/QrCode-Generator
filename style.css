@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* All containers */
+
+.mainpage{
+    background: #f1f5f3;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.title h2{
+    font-size: 2rem;
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container > div{
+    margin: 1%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.credits-container{
+    display: flex;
+    justify-content: center;
+}
+
+.credits-container p{
+    margin-top: 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    opacity: .5;
+    letter-spacing: 2px;
+}
+
+/* Elements */
+/* Textarea */
+.text-content{
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+
+/* Button */
+.generate-button{
+    padding: 5px;
+    background: #ffffff;
+    border: .3px solid #222;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+
+    transition: all .5s;
+}
+
+.generate-button:hover{
+    background: #000;
+    color: #fff;
+}
+
+canvas{
+    display: none;
+}
+
+/* For more responsive */
+/* It means that when screen width is less than 800 px(for mobile phones), these changes will apply ! */
+@media all and (max-width: 800px){
+    .form-container{
+        margin: 6%;
+    }
+
+    .form-container > div{
+        margin: 5%;
+    }
+
+    .credits-container p{
+        margin-top: 50%;
+    }
+
+
+    .title h2{
+        margin-top: 10%;
+        font-size: 1.7rem;
+    }
+}

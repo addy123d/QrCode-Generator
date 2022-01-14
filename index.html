@@ -1,0 +1,52 @@
+<!Doctype HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qr Code Generator</title>
+
+    <!-- Link CSS File -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- Container -->
+    <section class="mainpage">
+      <!-- Title Box -> Title -->
+      <div class="title" id="title">
+        <h2>QR Code Generator 👩‍💻</h2>
+      </div>
+
+      <!-- Form Container -->
+      <div class="form-container">
+        <!-- 1. QR Code 2.Text Area 3.Button  -->
+        <!-- QR Code -->
+        <div class="qr-box">
+          <!-- <img style="height: 100px; width: 100px;" src="demo.png" alt="demo image"/> -->
+          <canvas id="qr"></canvas>
+        </div>
+
+        <!-- Text Area -->
+        <div class="text-box">
+          <textarea cols="20" rows="5" class="text-content" id="text-content" placeholder="Text Here.. 📝"></textarea>
+        </div>
+
+        <!-- Generate Button -->
+        <div class="generate-box">
+          <button class="generate-button" id="generate-button">Generate ⚙</button>
+        </div>
+
+      </div>
+
+      <div class="credits-container">
+        <p>&copy; Copyright 2022 Rishav</p>
+      </div>
+
+    </section>
+  </body>
+  <!-- Link QRious Library JS file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.js"></script>
+  <!-- Link JS File -->
+  <script src="main.js"></script>
+</html>
